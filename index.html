@@ -10,21 +10,28 @@
 
   <style>   
     body {
-        background-color: black;
+        background-color: #0a031b;
         font-family: "Georgia", serif;
+        max-width: 100%;
     }
     a{
         padding: .5em;
-        color: plum;
+        color: #f47773;
         text-decoration: none;
     }
     #content{
         margin: auto;
-        padding: 100px;
         width: 80%;
         text-align: center;
         font-size: xx-large;
       }
+      .rline { 
+        display: block;         
+        padding: 1rem;
+    }
+    @media screen and (min-width: 768px){
+            .rline { display: inline; }
+    }
     #logo{
         width: 80%;
         display: block;
@@ -37,10 +44,11 @@
 <body>
     <div id="content">
         <img id="logo" src="./press/media/HellaVelvetLogo.png"alt="Hella Velvet logo">
-        <a href="./press/">Press Kit</a>
-        <a href="mailto:info@hellavelvet.com">Contact</a>
-        <a href="http://twitter.com/velvethella"><i class="fab fa-twitter"></i></a>
-        <a href="http://instagram.com/hella_velvet"><i class="fab fa-instagram"></i></a>
+        <span class="rline"><a href="./press/">Press Kit</a></span>
+        <span class="rline"><a href="mailto:info@hellavelvet.com">Contact</a></span>
+        <span class="rline"><a href="http://twitter.com/velvethella"><i class="fab fa-twitter"></i></a></span>
+        <span class="rline"><a href="http://instagram.com/hella_velvet"><i class="fab fa-instagram"></i></a></span>
     </div>
+    <br><br>
 </body>
 </html>
